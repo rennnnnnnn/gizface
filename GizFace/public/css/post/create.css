@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.post-form .form-control {
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .post-form .control-label {
+        text-align: left !important;
+        font-size: 15px;
+        color: gray;
+    }
+}
+
+.post-form .form-group {
+    margin-bottom: 25px;
+}
+
+.required:after {
+    content: " *";
+    color: #e00;
+}
+
+/*　カテゴリーセレクトボックス--- */
+.category-block {
+    position: relative;
+    display: block;
+}
+.post-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0 !important;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.category-block :after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 8px;
+    top: 57%;
+    right: 14%;
+    margin-top: -4px;
+    z-index: 2;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E")
+        0 0 no-repeat;
+    pointer-events: none;
+}
+
+.category-select-area .category-block:not(:first-of-type) {
+    padding-right: 3px;
+}
+/*---カテゴリーセレクトボックス */
+
+.row-10 {
+    height: calc(2em * 10);
+    line-height: 2;
+}
+
+.thumb-wrapper {
+    height: 300px;
+    width: 600px;
+    display: none;
+    margin-bottom: 10px;
+}
+.thumb-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 1px solid #e3e3e3;
+    padding: 6px;
+    margin: 0 auto;
+    display: block;
+}

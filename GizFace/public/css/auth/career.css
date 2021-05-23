@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@media (min-width: 768px) {
+    .career-form .control-label {
+        text-align: left !important;
+        font-size: 15px;
+        color: gray;
+    }
+}
+
+.career-form .form-group {
+    margin-bottom: 25px;
+}
+
+.career-form .form-control {
+    border-radius: 0;
+}
+
+.career-form .input-group-addon {
+    border-radius: 0;
+}
+
+/* 担当工程セレクトボックス--- */
+.process-block {
+    position: relative;
+    display: block;
+}
+.career-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0 !important;
+    width: 130px;
+    border: 1px solid #ccc;
+}
+
+.process-block :after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 8px;
+    top: 57%;
+    right: 25%;
+    margin-top: -4px;
+    z-index: 2;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E")
+        0 0 no-repeat;
+    pointer-events: none;
+}
+
+#processForm .process-block:not(:first-of-type) {
+    padding-right: 3px;
+}
+
+/*---担当工程セレクトボックス */
+
+#jobDetail {
+    height: calc(2em * 10);
+    line-height: 2;
+    height: 150px;
+}
+
+.flex {
+    display: inline-flex;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.pr-26 {
+    padding-right: 26px;
+}
+/* +ボタン */
+.addForm {
+    color: gray;
+    font-size: 20px;
+}
+/* 担当工程 +ボタン */
+.processAddForm {
+    color: gray;
+    font-size: 20px;
+}
+/* -ボタン */
+.delForm {
+    font-size: 20px;
+    color: #e00;
+}
+
+.required:after {
+    content: " *";
+    color: #e00;
+}
+
+/* 登録ボタン */
+#register {
+    background-color: gray;
+    color: white;
+    border-radius: 0 !important;
+}
+
+#register:hover {
+    background-color: #fff;
+    border-color: #59b1eb;
+    color: #59b1eb;
+}
+
+/* 更新ボタン */
+#update {
+    background-color: gray;
+    color: white;
+    border-radius: 0 !important;
+}
+
+#update:hover {
+    background-color: #fff;
+    border-color: #59b1eb;
+    color: #59b1eb;
+}
+
+/* 削除ボタン */
+#delete {
+    background-color: red;
+    color: white;
+    border-radius: 0 !important;
+}
+
+#delete:hover {
+    background-color: #fff;
+    border-color: #59b1eb;
+    color: #59b1eb;
+}

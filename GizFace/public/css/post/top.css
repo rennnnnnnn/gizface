@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+.post-block {
+    width: 600px;
+}
+
+.post-image {
+    height: 300px;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.post-list {
+    background: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-detail {
+    padding: 18px 0px 18px;
+}
+
+.category-tag {
+    display: flex;
+    align-items: center;
+}
+.category-tag .small {
+    border: 1px solid;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 12px;
+    padding: 0 12px;
+    font-size: 11px;
+    color: #a8b31b;
+    border-color: #a8b31b;
+}
+
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 8px;
+    width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 12px;
+}
+
+.post-user {
+    padding: 0 12px;
+    text-align: right;
+}
+.post-user a {
+    color: #9da0a4;
+}
+
+.post-user a:visited {
+    opacity: 0.8;
+}
+
+.post-body {
+    padding: 0 12px;
+    height: 74px;
+    overflow: hidden;
+}
+
+/* 両サイドの画像を透過 */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    background: #fff;
+}
+.slick-initialized .slick-slide {
+    opacity: 0.6; /* 両サイドの画像を透過 */
+}
+.slick-initialized .slick-slide.slick-active {
+    opacity: 1; /* センター画像を非透過 */
+}
+
+.slick {
+    padding: 0;
+}
+.slick-slide {
+    width: 600px;
+}
+.slick img {
+    width: 600px;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+.slick div {
+    margin: 0 5px;
+}
+.slick .slick-next {
+    right: 17px;
+    z-index: 100;
+}
+.slick .slick-prev {
+    left: 23px;
+    z-index: 100;
+}
+
+/* 左右矢印 */
+.slick-prev::before {
+    position: relative;
+    content: "\f060";
+    font-family: FontAwesome;
+    background: gray;
+    padding: 10px;
+    opacity: 1;
+}
+
+.slick-next::before {
+    position: relative;
+    content: "\f061";
+    font-family: FontAwesome;
+    background: gray;
+    padding: 10px;
+    opacity: 1;
+}
+
+.slick-prev {
+    left: 80px;
+}
+.slick-next {
+    right: 80px;
+}
+
+.slick-prev:hover:before {
+    animation: arrow_prev 0.5s ease-out forwards;
+}
+@keyframes arrow_prev {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 5px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.slick-next:hover:before {
+    animation: arrow_next 0.5s ease-out forwards;
+}
+@keyframes arrow_next {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 5px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .slick-prev {
+        left: 30px;
+    }
+    .slick-next {
+        right: 30px;
+    }
+}
+
+/* ドット */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+    color: green; /* hover時の色を変更 */
+}
+.slick-dots li button:before {
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    /* 元のcontentプロパティの値だとfont-sizeを変更した際に位置がずれてしまうので値を変更 */
+    /* content: '•'; */
+    content: "●";
+    text-align: center;
+
+    opacity: 0.25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: green; /* active時の色を変更 */
+}
+
+/*読み込みを修正*/
+.slick {
+    display: none;
+}
+.slick.slick-initialized {
+    display: block; /*slick-initializedが付与されたら表示*/
+}

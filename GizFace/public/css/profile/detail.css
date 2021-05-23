@@ -1,0 +1,196 @@
+.media-left {
+    padding-left: 30px;
+    padding-right: 120px;
+}
+
+.media-body {
+    width: 70%;
+    padding-top: 10px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.outer-box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: solid 1px #ddd;
+}
+
+.table-box {
+    width: 100%;
+    padding: 15px 15px;
+}
+
+.table-box .table {
+    margin-bottom: initial;
+}
+
+td {
+    white-space: nowrap;
+}
+.ellipsis td {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card:hover {
+    cursor: initial;
+    transform: initial;
+}
+
+.description {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.description h4 {
+    font-weight: bold;
+}
+
+.description-box {
+    width: 80%;
+}
+
+.description-box textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    resize: vertical;
+    height: 150px;
+    max-height: 300px;
+    min-height: 100px;
+    line-height: 20px;
+    border: solid 2px #ddd;
+}
+
+.nav-tabs li a {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*---nav-skill---*/
+.nav-tab-content {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.category-title {
+    margin-bottom: 20px;
+}
+
+.category-title h4 {
+    font-weight: bold;
+}
+
+.skill-list li span {
+    font-size: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.skill-info h4 {
+    display: inline-block;
+    position: relative;
+    padding: 0.25em 0;
+}
+
+.skill-info h4:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(
+        to right,
+        rgb(230, 90, 90),
+        transparent
+    );
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+/*---nav-career---*/
+
+h3 {
+    margin-top: 10px;
+}
+
+.career-info {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.career-info h4 {
+    font-weight: bold;
+}
+
+.career-info p,
+.career-info ul > li {
+    line-height: 2;
+    font-size: 14px;
+}
+
+.career-info ul {
+    padding-left: 22px;
+}
+
+.career-info h4 {
+    display: inline-block;
+    position: relative;
+    padding: 0.25em 0;
+}
+
+.career-info h4:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(
+        to right,
+        rgb(230, 90, 90),
+        transparent
+    );
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+
+.job-scale p {
+    padding-left: 4px;
+}
+
+.career-box {
+    background-color: #eee;
+    display: block;
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #acac;
+}
+
+.career-panel {
+    border: 1px solid #acac;
+    border-left: none;
+    border-bottom: none;
+    padding: 20px 20px;
+    display: none;
+}
+
+.career-btn {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+.career-btn:hover {
+    background-color: #ddd;
+}
+.fa-chevron-down {
+    float: right;
+}
